@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+	<title>品字满屏设计</title>
+	<style>
+    body{  
+          height: 1200px;  
+      }  
+      .main {  
+          position: fixed;  
+          left: 0;  
+          top: 0;  
+          height: 100%;  
+          width: 100%;  
+      }  
+      .wrapper-up {  
+          height: 50%;  
+      }  
+  
+      .wrapper-down {  
+          height: 50%;  
+          position: relative;  
+      }  
+      .div-square-up {  
+          width: 50%;  
+          margin: 0 auto;  
+          border: 2px solid red;  
+          height: 96%;  
+          box-sizing: border-box;  
+      }  
+  
+      .div-square-left {  
+          position: absolute;  
+          left: 0;  
+          width: 48%;  
+          height: 100%;  
+          box-sizing: border-box;  
+          border: 2px solid red;  
+      }  
+  
+      .div-square-right {  
+          position: absolute;  
+          right: 0;  
+          width: 48%;  
+          height: 100%;  
+          border: 2px solid red;  
+          box-sizing: border-box;  
+      } 
+    </style>
+</head>
+<body>
+<!-- 简单的方式：
+  	上面的div宽100%，
+  	下面的两个div分别宽50%，
+  	然后用float或者inline使其不换行即可 -->
+<div class="main">  
+ <div class="wrapper-up">  
+   <div class="div-square-up"></div>  
+ </div>  
+ <div class="wrapper-down">  
+   <div class="div-square-left"></div>  
+   <div class="div-square-right"></div>  
+ </div>  
+</div> 
+</body>
+</html>
