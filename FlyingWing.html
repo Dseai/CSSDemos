@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>双飞翼布局</title>
+	<style type="text/css">
+		.container{
+			padding-left: 200px;
+			padding-right: 200px;
+		}
+		.center{
+			position: relative;
+			float: left;
+			width: 100%;
+			height: 300px;
+			background-color: #CCFFFF;
+			text-align: center;
+
+		}
+		.center-inner{
+			margin-left: 150px;
+			margin-right: 150px;
+		}
+		.left{
+			position: relative;
+			float: left;
+			text-align: center;
+			margin-left: -100%;
+			width: 150px;
+			height: 300px;
+			background-color: #99CCCC;
+		}
+		.right{
+			position: relative;
+			float: left;
+			text-align: center;
+			width: 150px;
+			margin-right: -150px;
+			height: 300px;
+			background-color: #FFCCCC;
+
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<div class="center">
+		<div class="center-inner">中间弹性区</div>
+	</div>
+	<div class="left">left</div>
+	<div class="right">right</div>
+</div>
+</body>
+</html>
